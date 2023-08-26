@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Mockoon Docs action step
         id: create-mockoon-docs
-        uses: martin-bucinskas/mockoon-docs@v0.1
+        uses: martin-bucinskas/mockoon-docs@v0.1.5
         with:
           mockoon-json-file: 'demo.json'
           github-token: ${{secrets.GITHUB_TOKEN}}
