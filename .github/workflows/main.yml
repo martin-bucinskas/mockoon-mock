@@ -1,0 +1,13 @@
+on: [pull_request]
+
+jobs:
+  mockoon_docs_job:
+    runs-on: ubuntu-latest
+    name: Create Mockoon docs for PR
+    steps:
+      - name: Mockoon Docs action step
+        id: create-mockoon-docs
+        uses: martin-bucinskas/mockoon-docs@v0.1
+        with:
+          mockoon-json-file: 'demo.json'
+          github-token: ${{secrets.GITHUB_TOKEN}}
